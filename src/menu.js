@@ -3,12 +3,9 @@ import mcChicken from "./static/mc-chicken.jpeg";
 import caramelSundae from "./static/caramel-sundae.jpeg";
 
 function menuTab() {
-    const body = document.querySelector("body");
+    const content = document.querySelector(".content");
 
-    // Create Main with img, header, and subheader
-    const content = document.createElement("content");
-    content.className = "content";
-
+    // Create Main content
     const mainHeader = document.createElement("h1");
     mainHeader.textContent = "Lunch Menu";
     content.appendChild(mainHeader);
@@ -39,9 +36,6 @@ function menuTab() {
     const caramelSundaeImage = document.createElement("img");
     caramelSundaeImage.src = caramelSundae;
     content.appendChild(caramelSundaeImage);
-
-    // Append main to body
-    body.appendChild(content);
 }
 
 export default menuTab;

@@ -2,12 +2,9 @@ import ronaldMcdonald from "./static/ronald-mcdonald.jpg";
 import grimace from "./static/grimace.jpg";
 
 function contactTab() {
-    const body = document.querySelector("body");
+    const content = document.querySelector(".content");
 
-    // Create Main with img, header, and subheader
-    const content = document.createElement("content");
-    content.className = "content";
-
+    // Create Main content
     const mainHeader = document.createElement("h1");
     mainHeader.textContent = "Contact us!";
     content.appendChild(mainHeader);
@@ -29,9 +26,6 @@ function contactTab() {
     const grimaceImage = document.createElement("img");
     grimaceImage.src = grimace;
     content.appendChild(grimaceImage);
-
-    // Append main to body
-    body.appendChild(content);
 }
 
 export default contactTab;

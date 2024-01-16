@@ -1,12 +1,9 @@
 import icon from "./static/icon.jpg";
 
 function homeTab() {
-    const body = document.querySelector("body");
+    const content = document.querySelector(".content");
 
-    // Create Main with img, header, and subheader
-    const content = document.createElement("content");
-    content.className = "content";
-
+    // Create Main content
     const mainHeader = document.createElement("h1");
     mainHeader.textContent = "McDonald's: A Fast Food Revolution";
     content.appendChild(mainHeader);
@@ -18,9 +15,6 @@ function homeTab() {
     const iconImg = document.createElement("img");
     iconImg.src = icon;
     content.appendChild(iconImg);
-
-    // Append main to body
-    body.appendChild(content);
 }
 
 export default homeTab;
