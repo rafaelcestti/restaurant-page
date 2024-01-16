@@ -1,5 +1,3 @@
-import icon from "./icon.jpg";
-
 function pageLoad() {
     const body = document.querySelector("body");
 
@@ -10,24 +8,26 @@ function pageLoad() {
     navHeader.textContent = "McDonalds";
     nav.appendChild(navHeader);
 
-    // Create Main with img, header, and subheader
-    const main = document.createElement("main");
+    // Add tabs to tabSection
+    const tabSection = document.createElement("section");
 
-    const iconImg = document.createElement("img");
-    iconImg.src = icon;
-    main.appendChild(iconImg);
+    const homeTab = document.createElement("h3");
+    homeTab.textContent = "Home";
+    tabSection.appendChild(homeTab);
 
-    const mainHeader = document.createElement("h1");
-    mainHeader.textContent = "McDonald's: A Fast Food Revolution";
-    main.appendChild(mainHeader);
+    const menuTab = document.createElement("h3");
+    menuTab.textContent = "Menu";
+    tabSection.appendChild(menuTab);
 
-    const subHeader = document.createElement("h3");
-    subHeader.textContent = "Delighting taste buds around the globe with its iconic, irresistible flavors.";
-    main.appendChild(subHeader);
+    const contactTab = document.createElement("h3");
+    contactTab.textContent = "Contact";
+    tabSection.appendChild(contactTab);
 
-    // Append Navbar and Main to Body
+    // Append tabSection to navbar
+    nav.appendChild(tabSection);
+
+    // Append Navbar to Body
     body.appendChild(nav);
-    body.appendChild(main);
 }
 
 export default pageLoad;

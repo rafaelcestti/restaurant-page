@@ -1,5 +1,7 @@
 import pageLoad from "./initial.js";
-import "./reset.css";
-import "./style.css";
+import homeTab from "./home.js";
+import "./static/reset.css";
+import "./static/style.css";
 
 pageLoad();
+homeTab();
