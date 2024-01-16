@@ -34,3 +34,28 @@ section > h3 {
 
 /* Home Tab Styling */
 
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.content h1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.content h2 {
+    font-size: 1.2rem;
+}
+
+.content h3 {
+    font-size: 1.3rem;
+}
+
+.content img {
+    width: 500px;
+}
